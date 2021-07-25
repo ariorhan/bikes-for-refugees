@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="header container">
+    <header class="header container">
       <div class="navigation navbar navbar-toggleable-md navbar-light">
         <button
           class="navigation__toggle navbar-toggler navbar-toggler-right"
@@ -76,9 +76,9 @@
           <button>Donate Now</button>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div id="content" class="container">
+    <main id="content" class="container">
       <div class="row">
         <div class="main col-lg-8">
           <div class="alert">
@@ -94,7 +94,14 @@
             </p>
             <hr class="my-4" />
             <button>Donate a bike today</button>
-            <button>Volunteer</button>
+            <button style="background-color:#fff; color: #c05326">Volunteer</button>
+          </div>
+
+          <div class="menu">
+            <div>ASAGIDAKILER KUTU YAPILACAK</div>
+            <div>Check availability</div>
+            <div>Donate bikes</div>
+            <div>Volunteer with us</div>
           </div>
 
           <div>
@@ -138,14 +145,14 @@
           </div>
         </div>
 
-        <div class="sidebar col-lg-4">
+        <aside class="sidebar col-lg-4">
           <h2 class="heading-underline">Upcoming events</h2>
 
           <div class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-spring-fundraisers.jpg"
-              alt=""
+              src="images/spring-fundraisers_thumbnail.jpg"
+              alt="spring"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -161,8 +168,8 @@
           <div class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/bikes-for-refugees-logo.jpg"
-              alt=""
+              src="images/bikes-for-refugees_logo.jpg"
+              alt="logo"
             />
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
@@ -174,9 +181,8 @@
           <div class="article">
             <img
               class="article__image"
-              src="https://raw.githubusercontent.com/Code-Your-Future/syllabus/master/html-css/assets/news-cycle.jpg"
-              alt=""
-            />
+              src="images/edinburgh-damascus_thumbnail.png"
+              alt="road">
             <div class="article__body">
               <h3 class="article__title article__title--sidebar">
                 <a href="#">Help us cycle 4,797km</a>
@@ -195,12 +201,12 @@
             <span class="fa fa-facebook-square"></span>
             All Facebook events
           </a>
-        </div>
+        </aside>
       </div>
       <!-- end of row -->
-    </div>
+    </main>
 
-    <div class="footer container">
+    <footer class="footer container">
       <div class="row">
         <div class="col-lg-8">
           <p class="text-center">
@@ -209,7 +215,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"

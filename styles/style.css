@@ -11,9 +11,34 @@ body {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+@media screen and (min-width: 320px) {
+  body {
+    font-size:100%;
+  }
+}
+
 button {
   font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  background-color: #c05326;
+  color:white;
+  border:transparent;
+  border-radius: 7px;
+  height: 40px;
 }
+button:hover,
+button:focus {
+background: #934423 ;
+}
+
+
+/* Burada pseudo class i menu icin kullanamadim sadece div icin kullanilabiliyor */
+/* .menu{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding-bottom: 1rem;
+} */
+
 
 /* Navigation */
 
@@ -33,6 +58,13 @@ button {
   text-transform: uppercase;
 
   /* Challenge: can you make the navigation links orange on hover? */
+}
+.navbar-nav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.navbar-nav a.active {
+  border-bottom: 3px solid red;
 }
 
 /* Buttons */
@@ -67,7 +99,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("/images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -98,24 +130,37 @@ button {
 /* Article */
 
 .article {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  border: 1px solid #dccdc6;
+  width: 340px;
+  margin-left: 10px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  float: left;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  float: left;
+  padding:0 10px 10px 0;
+    
+  
 }
 
 .article__title {
-  margin-bottom: 0.5em;
+  margin-top: 1em;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .article__read-more a {
+  margin: 0.5em;
   font-size: 0.85em;
-  font-weight: 700;
+  font-weight: 700px;
   text-decoration: uppercase;
+  
 }
 
 .article__read-more a:hover,
